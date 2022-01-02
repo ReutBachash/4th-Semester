@@ -7,7 +7,8 @@ public class SelectableObjects : MonoBehaviour
     [SerializeField] private string selecableTag = "Selectable";
     [SerializeField] Material highLightMaterial;
     [SerializeField] Material defaultMatrial;
-
+    [SerializeField] Material civMatrial;
+    private Identity script;
     private Transform _selection;
 
     // Update is called once per frame
@@ -26,12 +27,22 @@ public class SelectableObjects : MonoBehaviour
             if(Input.GetMouseButtonDown(0))
             {
                 var selection = hit.transform;
-                if (selection.CompareTag(selecableTag))
+                script = selection.GetComponent<Identity>();
+                if (selection.CompareTag(selecableTag)&& script.identityBehvoiur== "Enemy")
                 {
                     var selctionRenderer = selection.GetComponent<Renderer>();
                     if (selctionRenderer != null)
                     {
                         selctionRenderer.material = highLightMaterial;
+                    }
+                    _selection = selection;
+                }
+                else if (selection.CompareTag(selecableTag) && script.identityBehvoiur == "Civilian")
+                {
+                    var selctionRenderer = selection.GetComponent<Renderer>();
+                    if (selctionRenderer != null)
+                    {
+                        selctionRenderer.material = civMatrial;
                     }
                     _selection = selection;
                 }
