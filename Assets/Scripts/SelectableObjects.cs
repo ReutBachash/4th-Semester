@@ -24,7 +24,7 @@ public class SelectableObjects : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(ray,out hit))
         {
-            if(Input.GetMouseButtonDown(0))
+            if(Input.GetMouseButton(0))
             {
                 var selection = hit.transform;
                 script = selection.GetComponent<Identity>();
