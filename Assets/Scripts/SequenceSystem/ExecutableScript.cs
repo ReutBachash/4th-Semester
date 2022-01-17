@@ -19,10 +19,8 @@ public class ExecutableScript : MonoBehaviour
             {
                 z.StartSequenceEvent();
                 yield return new WaitForSeconds(z.GetTimeAlive());
-                print("WaitAndPrint " + Time.time);
                 z.StopSequenceEvent();
                 yield return new WaitForSeconds(waitTime);
-                print("WaitAndPrint " + Time.time);
             }
         }
     }
