@@ -1500,7 +1500,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 605148157}
-  - component: {fileID: 605148158}
   m_Layer: 0
   m_Name: player
   m_TagString: player
@@ -1524,22 +1523,6 @@ Transform:
   m_Father: {fileID: 2089844479}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &605148158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605148156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5679494886729a459fda272900b4c89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyOne: {fileID: 2128515741}
-  EnemyTwo: {fileID: 712325402}
-  EnemyThree: {fileID: 1391983602}
-  EnemyFour: {fileID: 1529593096}
 --- !u!1 &609420399
 GameObject:
   m_ObjectHideFlags: 0
@@ -6571,11 +6554,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!95 &2128515741 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1256009444170670839, guid: 701f57878eb95224db88301906046b95, type: 3}
-  m_PrefabInstance: {fileID: 1256009443921125193}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2128515745 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1256009444170670731, guid: 701f57878eb95224db88301906046b95, type: 3}
