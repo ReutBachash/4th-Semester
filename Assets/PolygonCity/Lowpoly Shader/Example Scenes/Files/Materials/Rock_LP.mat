@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Rock_LP
+  m_Shader: {fileID: 4800000, guid: d1526246dce9ba949bfca532512d7294, type: 3}
+  m_ShaderKeywords: _LOWPOLY_DIFFUSEBLENDMODE_NONE
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 047414cbd2e318e41a7d1557a27d36c5, type: 3}
+        m_Scale: {x: 9, y: 9}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap2:
+        m_Texture: {fileID: 2800000, guid: 42c12cb55ddd98245a0b2c96121c8a5a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisplaceTex_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisplaceTex_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lowpoly_BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lowpoly_DiffuseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lowpoly_DisplaceMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lowpoly_DisplaceSecondaryMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lowpoly_SecondaryTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 91abc81e91f8a69469939eb6feb0c319, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: d0692a948ca573d4cb0b93ffb1c8a033, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PixelTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BUMP_LABEL: 0
+    - _Cutoff: 0.5
+    - _DisplaceAmplitude: 0.5
+    - _DisplaceBlendType: 1
+    - _DisplaceDirection: 45
+    - _DisplaceFrequency: 0.2
+    - _DisplaceNoiseCoef: -0.5
+    - _DisplaceScriptSynchronize: 0
+    - _DisplaceSpeed: 1
+    - _DisplaceStrength: 1
+    - _DisplaceType: 0
+    - _Dsiplace_LABEL: 0
+    - _EMISSION_TOGGLE: 0
+    - _EmissionStrength: 1
+    - _FORWARD_RENDERING_LABEL: 0
+    - _Glossiness: 0
+    - _LowPolyLightID: 1
+    - _Lowpoly_AlphaTest: 0
+    - _Lowpoly_BumpMapStrength: 1
+    - _Lowpoly_Cull: 0
+    - _Lowpoly_DiffuseBlendAlphaPremultiply: 0
+    - _Lowpoly_DiffuseBlendMode: 0
+    - _Lowpoly_DiffuseBlendStrength: 1
+    - _Lowpoly_DiffuseMapMode: 0
+    - _Lowpoly_DiffuseMapModeBlendStrength: 1
+    - _Lowpoly_DiffuseMap_Cutoff: 0.5
+    - _Lowpoly_DisplaceAmplitude: 0.5
+    - _Lowpoly_DisplaceDirection: 45
+    - _Lowpoly_DisplaceFrequency: 0.2
+    - _Lowpoly_DisplaceMapChannel: 0
+    - _Lowpoly_DisplaceMapStrength: 1
+    - _Lowpoly_DisplaceMapsBlendMode: 1
+    - _Lowpoly_DisplaceMode: 0
+    - _Lowpoly_DisplaceNoiseCoef: -0.5
+    - _Lowpoly_DisplaceScriptSynchronize: 0
+    - _Lowpoly_DisplaceSecondaryMapChannel: 0
+    - _Lowpoly_DisplaceSecondaryMapStrength: 1
+    - _Lowpoly_DisplaceSpeed: 20
+    - _Lowpoly_FlatLightMaps: 0
+    - _Lowpoly_FlatNormals: 1
+    - _Lowpoly_FlatSamples: 0
+    - _Lowpoly_SampleType: 0
+    - _Lowpoly_SecondaryTex_InvertAlpha: 0
+    - _Lowpoly_SecondaryTextureBlendMode: 0
+    - _Lowpoly_SmoothnessSource: 0
+    - _Lowpoly_TexutreBlendMode: 0
+    - _Lowpoly_TransparentFade: 0
+    - _Lowpoly_UseVertexColor: 0
+    - _Lowpoly_WireframeColorEmission: 0
+    - _Lowpoly_WireframeDiameter: 1
+    - _Lowpoly_WireframeMode: 0
+    - _Lowpoly_WireframeNormalizeEdges: 0
+    - _Lowpoly_WireframeSmoothness: 0
+    - _Lowpoly_WireframeThickness: 0.01
+    - _Lowpoly_WireframeTryQuads: 0
+    - _Metallic: 0.5
+    - _Opacity: 1
+    - _PAPERCRAFT_LABEL: 0
+    - _PIXEL_LABEL: 0
+    - _PaperCrat: 0
+    - _PixelTex_AlphaOffset: 0
+    - _PixelTex_BlendType: 0
+    - _PixelTextureID: 0
+    - _REFLECTION_LABEL: 0
+    - _RENDERING_MODE_LABEL: 0
+    - _SHADER_TYPE_LABEL: 0
+    - _SPECULAR_LABEL: 0
+    - _SamplingType: 0
+    - _SecondTex_AlphaOffset: 0
+    - _SecondTex_BlendType: 0
+    - _SecondTextureID: 0
+    - _SmoothnessSource: 0
+    - _UNITY_ARO: 0
+    - _VERTEX_LABEL: 0
+    - _V_WIRE_FixedSize: 0
+    - _V_WIRE_Size: 1
+    - _V_WIRE_TryQuad: 0
+    - _VertexColor: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DisplaceTex_1_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _DisplaceTex_2_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionTex_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Lowpoly_BumpMap_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Lowpoly_DiffuseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Lowpoly_DiffuseMap_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Lowpoly_DisplaceMap_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Lowpoly_DisplaceSecondaryMap_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Lowpoly_SecondaryColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Lowpoly_SecondaryTex_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Lowpoly_WireframeColor: {r: 1, g: 0, b: 0, a: 1}
+    - _MainTex_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _PixelTex_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondTex_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _V_WIRE_Color: {r: 0, g: 0, b: 0, a: 1}

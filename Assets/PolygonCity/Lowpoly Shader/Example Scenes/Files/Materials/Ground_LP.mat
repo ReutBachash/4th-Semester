@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ground_LP
+  m_Shader: {fileID: 4800000, guid: d1526246dce9ba949bfca532512d7294, type: 3}
+  m_ShaderKeywords: _LOWPOLY_ALPHATEST_NONE _LOWPOLY_DIFFUSEBLENDMODE_NONE _LOWPOLY_DISPLACEMODE_NONE
+    _LOWPOLY_FLAT_SAMPLES _LOWPOLY_SAMPLETYPE_FIRST_INDEX _LOWPOLY_SECONDARYTEXTUREBLENDMODE_NONE
+    _LOWPOLY_WIREFRAMEMODE_NONE
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisplaceTex_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisplaceTex_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lowpoly_BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lowpoly_DiffuseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lowpoly_DisplaceMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lowpoly_DisplaceSecondaryMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lowpoly_SecondaryTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1355afd4b6c3ad14594af2241bf4b668, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PixelTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BUMP_LABEL: 0
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DisplaceAmplitude: 0.5
+    - _DisplaceBlendType: 1
+    - _DisplaceDirection: 45
+    - _DisplaceFrequency: 0.2
+    - _DisplaceNoiseCoef: -0.5
+    - _DisplaceScriptSynchronize: 0
+    - _DisplaceSpeed: 1
+    - _DisplaceStrength: 1
+    - _DisplaceType: 0
+    - _Dsiplace_LABEL: 0
+    - _DstBlend: 0
+    - _FORWARD_RENDERING_LABEL: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _LowPolyLightID: 0
+    - _Lowpoly_AlphaTest: 0
+    - _Lowpoly_BumpMapStrength: 1
+    - _Lowpoly_Cull: 0
+    - _Lowpoly_DiffuseBlendAlphaPremultiply: 0
+    - _Lowpoly_DiffuseBlendMode: 0
+    - _Lowpoly_DiffuseBlendStrength: 1
+    - _Lowpoly_DiffuseMap_Cutoff: 0.5
+    - _Lowpoly_DisplaceAmplitude: 0.5
+    - _Lowpoly_DisplaceDirection: 45
+    - _Lowpoly_DisplaceFrequency: 0.2
+    - _Lowpoly_DisplaceMapChannel: 0
+    - _Lowpoly_DisplaceMapStrength: 1
+    - _Lowpoly_DisplaceMapsBlendMode: 1
+    - _Lowpoly_DisplaceMode: 0
+    - _Lowpoly_DisplaceNoiseCoef: -0.5
+    - _Lowpoly_DisplaceScriptSynchronize: 0
+    - _Lowpoly_DisplaceSecondaryMapChannel: 0
+    - _Lowpoly_DisplaceSecondaryMapStrength: 1
+    - _Lowpoly_DisplaceSpeed: 20
+    - _Lowpoly_FlatLightMaps: 0
+    - _Lowpoly_FlatNormals: 0
+    - _Lowpoly_FlatSamples: 1
+    - _Lowpoly_SampleType: 2
+    - _Lowpoly_SecondaryTex_InvertAlpha: 0
+    - _Lowpoly_SecondaryTextureBlendMode: 0
+    - _Lowpoly_SmoothnessSource: 0
+    - _Lowpoly_TransparentFade: 0
+    - _Lowpoly_UseVertexColor: 0
+    - _Lowpoly_WireframeColorEmission: 0
+    - _Lowpoly_WireframeDiameter: 1
+    - _Lowpoly_WireframeMode: 0
+    - _Lowpoly_WireframeNormalizeEdges: 0
+    - _Lowpoly_WireframeSmoothness: 0
+    - _Lowpoly_WireframeThickness: 0.01
+    - _Lowpoly_WireframeTryQuads: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _PIXEL_LABEL: 0
+    - _Parallax: 0.02
+    - _PixelTex_AlphaOffset: 0
+    - _PixelTex_BlendType: 0
+    - _PixelTextureID: 0
+    - _REFLECTION_LABEL: 0
+    - _RENDERING_MODE_LABEL: 0
+    - _SHADER_TYPE_LABEL: 0
+    - _SPECULAR_LABEL: 0
+    - _SamplingType: 0
+    - _SecondTex_AlphaOffset: 0
+    - _SecondTex_BlendType: 0
+    - _SecondTextureID: 0
+    - _SmoothnessSource: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _VERTEX_LABEL: 0
+    - _VertexColor: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DisplaceTex_1_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _DisplaceTex_2_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Lowpoly_BumpMap_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Lowpoly_DiffuseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Lowpoly_DiffuseMap_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Lowpoly_DisplaceMap_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Lowpoly_DisplaceSecondaryMap_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Lowpoly_SecondaryColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Lowpoly_SecondaryTex_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Lowpoly_WireframeColor: {r: 1, g: 0, b: 0, a: 1}
+    - _MainTex_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _PixelTex_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondTex_Scroll: {r: 0, g: 0, b: 0, a: 0}
