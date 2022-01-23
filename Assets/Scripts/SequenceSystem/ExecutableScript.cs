@@ -9,7 +9,7 @@ public class ExecutableScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(ActivateSequnece(waitTime));
+        //StartCoroutine(ActivateSequnece(waitTime));
     }
     private IEnumerator ActivateSequnece(float waitTime)
     {
