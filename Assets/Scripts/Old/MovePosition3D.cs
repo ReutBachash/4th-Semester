@@ -13,7 +13,10 @@ public class MovePosition3D : MonoBehaviour
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         if(Physics.Raycast(ray,out RaycastHit hit,999f,mouseColiderLayerMask))
         {
-            transform.position = hit.point;
+            if (hit.transform.CompareTag("Enemy"))
+            {
+                Debug.Log("Hit");
+            }
         }
     }
 }
