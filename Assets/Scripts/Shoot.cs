@@ -27,6 +27,7 @@ public class Shoot : MonoBehaviour
             if(hit.transform.CompareTag("Enemy"))
             {
                 hit.transform.parent.GetComponentInChildren<Animator>().SetTrigger("Death");
+                hit.transform.parent.GetComponentInParent<Animator>().SetTrigger("Death");
                  Debug.Log("Hit");
             }
 
