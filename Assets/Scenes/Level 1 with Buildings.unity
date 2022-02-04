@@ -15014,7 +15014,7 @@ MonoBehaviour:
   - {fileID: 8759698355292345779}
   - {fileID: 8759698355049437872}
   - {fileID: 8759698356172405594}
-  waitTime: 2.86
+  waitTime: 0.5
   zoneNumber: 1
 --- !u!4 &1044243114
 Transform:
