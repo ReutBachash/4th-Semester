@@ -7,11 +7,8 @@ public class Shoot : MonoBehaviour
 {
     public float Range = 1000;
     public float Force = 1000;
-    private float _hitRange=2000;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private LayerMask mouseColiderLayerMask;
-
-    public event Action<EnemyIdentity> onEnemyDeath;
 
 
     // Update is called once per frame
@@ -24,12 +21,11 @@ public class Shoot : MonoBehaviour
     void RayShoot()
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit, _hitRange, mouseColiderLayerMask))
+        if (Physics.Raycast(ray, out RaycastHit hit, 200000f, mouseColiderLayerMask))
         {
             Debug.DrawLine(ray.origin, hit.point,Color.blue);
             if(hit.transform.CompareTag("Enemy"))
             {
-                onEnemyDeath.Invoke(hit.transform.GetComponentInParent<EnemyIdentity>());
                 hit.transform.parent.GetComponentInChildren<Animator>().SetTrigger("Death");
                 hit.transform.parent.GetComponentInParent<Animator>().SetTrigger("Death");
                  Debug.Log("Hit");
