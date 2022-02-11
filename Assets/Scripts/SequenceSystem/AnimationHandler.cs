@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimationHandler : MonoBehaviour
 {
-    private Animator animator;
+    [SerializeField] private Animator animator;
     private void Awake()
     {
         animator = this.gameObject.GetComponent<Animator>();
