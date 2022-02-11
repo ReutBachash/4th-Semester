@@ -1,0 +1,1 @@
+Create prefabs for object that create more than one time in the scene Like: Enemeis.
