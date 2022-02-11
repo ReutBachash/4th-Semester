@@ -1396,7 +1396,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6657200594086539788}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 41e881cbfd5e8d04eb76b2313d08ca43, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -1436,6 +1436,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyNumber: 0
   _isLastEnemy: 0
+  isAlive: 0
+  _shootScript: {fileID: 0}
 --- !u!114 &6657200594086539784
 MonoBehaviour:
   m_ObjectHideFlags: 0
