@@ -21,6 +21,6 @@ public class EnemiesMovement : MonoBehaviour
     [ContextMenu("Set Destination to Target")]
     public void SetDestination()
     {
-        Debug.Log(EnemyAgent.SetDestination(_target.position));
+        EnemyAgent.SetDestination(_target.position);
     }
 }
