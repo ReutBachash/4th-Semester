@@ -5237,7 +5237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 476138, guid: c838be5f7abd9c64db9643ebadf0c932, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 476138, guid: c838be5f7abd9c64db9643ebadf0c932, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10767,7 +10767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 476138, guid: c838be5f7abd9c64db9643ebadf0c932, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 476138, guid: c838be5f7abd9c64db9643ebadf0c932, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11695,7 +11695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 476138, guid: c838be5f7abd9c64db9643ebadf0c932, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 476138, guid: c838be5f7abd9c64db9643ebadf0c932, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13545,6 +13545,18 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 452757299}
+    - target: {fileID: 1446782277860454718, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1802055245}
+    - target: {fileID: 1446782277860454718, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
+      propertyPath: _enemyAgent
+      value: 
+      objectReference: {fileID: 1802055241}
+    - target: {fileID: 1446782277860454718, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
+      propertyPath: _startPoint
+      value: 
+      objectReference: {fileID: 2584745176786400701}
     - target: {fileID: 2584745175994677252, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -19120,7 +19132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 476138, guid: c838be5f7abd9c64db9643ebadf0c932, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 476138, guid: c838be5f7abd9c64db9643ebadf0c932, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30993,6 +31005,16 @@ MonoBehaviour:
 --- !u!1 &1802055239 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2924257447006790334, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
+  m_PrefabInstance: {fileID: 860933561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &1802055241 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 5536908444456520396, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
+  m_PrefabInstance: {fileID: 860933561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1802055245 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2924257447006790335, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
   m_PrefabInstance: {fileID: 860933561}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1802906557 stripped
