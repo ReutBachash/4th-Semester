@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.092084914, g: 0.16207245, b: 0.45400003, a: 1}
+  m_FogColor: {r: 0.081689656, g: 0.31841153, b: 0.412, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.13782355, g: 0.14425978, b: 0.20294338, a: 1}
+  m_IndirectSpecularColor: {r: 0.13730437, g: 0.15722993, b: 0.18945926, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14189,7 +14189,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.5896226, g: 0.7971729, b: 1, a: 1}
+  m_Color: {r: 0.532, g: 0.7682286, b: 1, a: 1}
   m_Intensity: 0.8
   m_Range: 10
   m_SpotAngle: 30
@@ -20069,8 +20069,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.011019839, y: -0.043581776, z: -0.0004807502, w: 0.998989}
-  m_LocalPosition: {x: 77.36408, y: 2.719, z: 10.728614}
+  m_LocalRotation: {x: 0.0962671, y: -0.585444, z: 0.07028155, w: 0.80190307}
+  m_LocalPosition: {x: 100.70248, y: 2.719, z: -3.3000143}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
