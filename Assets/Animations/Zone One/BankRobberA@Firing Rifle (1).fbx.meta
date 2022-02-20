@@ -8,10 +8,13 @@ ModelImporter:
     second: Firing Rifle (1)
   - first:
       74: -203655887218126122
-    second: mixamo.com
+    second: Shooting
   - first:
       74: 1513170266431258203
     second: Firing Rifle
+  - first:
+      74: -203655887218126122
+    second: mixamo.com
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -70,7 +73,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: mixamo.com
+      name: Shooting
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0

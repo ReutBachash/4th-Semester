@@ -35,6 +35,7 @@ public class EnemiesZoneSpawnLogic : MonoBehaviour
         {
             _enemies[identity._enemyNumber + 1].GetComponent<EnemiesMovement>().SetDestination();
             identity.isAlive = true;
+            _enemies[identity._enemyNumber + 1].GetComponent<Animator>().enabled = true;
         }
         else
             onLastEnemykilled!.Invoke(_zoneNumber);

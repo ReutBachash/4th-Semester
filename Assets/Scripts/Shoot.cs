@@ -33,6 +33,7 @@ public class Shoot : MonoBehaviour
                 //hit.transform.parent.GetComponentInChildren<Animator>().SetTrigger("Death");
                 hit.transform.parent.GetComponentInParent<Animator>().SetTrigger("Death");
                 hit.transform.parent.GetComponentInParent<DestroyObject>().DestroyMe(2f);
+                Debug.Log("Death");
             }
 
         }
