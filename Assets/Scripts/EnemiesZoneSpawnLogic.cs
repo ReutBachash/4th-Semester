@@ -13,7 +13,7 @@ public class EnemiesZoneSpawnLogic : MonoBehaviour
 
     public event Action<int> onLastEnemykilled;
 
-    [SerializeField]private float amountOfSecBeforeShoot = 5;
+    [SerializeField] private float amountOfSecBeforeShoot = 5;
     private float currentTime;
 
     void Start()
@@ -22,10 +22,10 @@ public class EnemiesZoneSpawnLogic : MonoBehaviour
 
         //Add ZoneConfiguration
 
-        _enemies[0].GetComponent<AnimationHandler>().AnimationStart(); //spawning first enemy
-        _enemies[0].GetComponent<EnemyIdentity>().isAlive = true ; //spawning first enemy
+        _enemies[0].GetComponent<EnemiesMovement>().SetDestination(); //spawning first enemy
+        _enemies[0].GetComponent<EnemyIdentity>().isAlive = true; //spawning first enemy
 
-        
+
     }
 
     // Update is called once per frame
@@ -33,16 +33,16 @@ public class EnemiesZoneSpawnLogic : MonoBehaviour
     {
         if (!identity._isLastEnemy)
         {
-            _enemies[identity._enemyNumber + 1].GetComponent<AnimationHandler>().AnimationStart();
+            _enemies[identity._enemyNumber + 1].GetComponent<EnemiesMovement>().SetDestination();
             identity.isAlive = true;
         }
         else
-            onLastEnemykilled.Invoke(_zoneNumber);
+            onLastEnemykilled!.Invoke(_zoneNumber);
     }
 
     private void Update()
-    {
-        
+    { 
+        //fix here health issues
         foreach(GameObject enemy in _enemies)
         {
             if(enemy!=null)

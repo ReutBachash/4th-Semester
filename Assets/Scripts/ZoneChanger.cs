@@ -26,6 +26,6 @@ public class ZoneChanger : MonoBehaviour
                 GameObject.Find("CM vcam1").GetComponent<TriggerHandler>().zone3Cleared = true;
                 break;
 
-                        }
+        }
     }
 }

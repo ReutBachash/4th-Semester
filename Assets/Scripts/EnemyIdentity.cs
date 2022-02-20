@@ -14,12 +14,10 @@ public class EnemyIdentity : MonoBehaviour
     private void Start()
     {
         _shootScript.onEnemyDeath += Dead;
-
     }
 
     private void Dead(EnemyIdentity identity)
     {
-        Debug.Log("Meow");
         isAlive = false;
         
     }

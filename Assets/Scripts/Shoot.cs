@@ -30,9 +30,9 @@ public class Shoot : MonoBehaviour
             if(hit.transform.CompareTag("Enemy"))
             {
                 onEnemyDeath.Invoke(hit.transform.GetComponentInParent<EnemyIdentity>());
-                hit.transform.parent.GetComponentInChildren<Animator>().SetTrigger("Death");
+                //hit.transform.parent.GetComponentInChildren<Animator>().SetTrigger("Death");
                 hit.transform.parent.GetComponentInParent<Animator>().SetTrigger("Death");
-                 Debug.Log("Hit");
+                hit.transform.parent.GetComponentInParent<DestroyObject>().DestroyMe(2f);
             }
 
         }

@@ -5,8 +5,8 @@ using UnityEngine;
 public class DestroyObject : MonoBehaviour
 {
     // Start is called before the first frame update
-   public void DestroyMe()
+    public void DestroyMe(float sec)
     {
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, sec);
     }
 }
