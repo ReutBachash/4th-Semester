@@ -219,20 +219,10 @@ Transform:
   m_Father: {fileID: 605148157}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -92.24, z: -0.001}
---- !u!1 &27326919 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2924257447006790334, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
-  m_PrefabInstance: {fileID: 1309587218}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &27326924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2584745175994677252, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
   m_PrefabInstance: {fileID: 1309587218}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &185957790 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2924257447006790334, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
-  m_PrefabInstance: {fileID: 1081836252}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &185957795 stripped
 Transform:
@@ -2223,12 +2213,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a03b61c38d428a4990276b6f1af8c78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Range: 1000
-  Force: 1000
   mainCamera: {fileID: 963194227}
   mouseColiderLayerMask:
     serializedVersion: 2
     m_Bits: 128
+  bulletsAvailable: {fileID: 0}
+  timeToReload: 50
+  maximumBullets: 3
 --- !u!114 &605148159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4227,14 +4218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shootScript: {fileID: 605148158}
-  _enemies:
-  - {fileID: 1802055239}
-  - {fileID: 27326919}
-  - {fileID: 185957790}
-  - {fileID: 1292445851}
-  _zoneNumber: 0
-  _playerHealth: {fileID: 605148160}
-  amountOfSecBeforeShoot: 3
+  _allEnemies: []
 --- !u!4 &1044243114
 Transform:
   m_ObjectHideFlags: 0
@@ -6003,11 +5987,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1292445851 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2924257447006790334, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
-  m_PrefabInstance: {fileID: 559442140}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1292445856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2584745175994677252, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
@@ -8037,11 +8016,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1802055239 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2924257447006790334, guid: cc62687fa9bec8c468e0e1ec362bab48, type: 3}
-  m_PrefabInstance: {fileID: 860933561}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1845593959
 GameObject:
   m_ObjectHideFlags: 0
