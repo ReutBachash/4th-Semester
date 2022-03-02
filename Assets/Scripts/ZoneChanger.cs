@@ -1,15 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ZoneChanger : MonoBehaviour
 {
-    [SerializeField] private EnemiesZoneSpawnLogic _zoneEnemySpawnScript;
+    [SerializeField] private EnemiesSpawnLogic _zoneEnemySpawnScript;
     // Start is called before the first frame update
 
     private void Start()
     {
-        _zoneEnemySpawnScript.onLastEnemykilled += EnableZoneClear;
+        _zoneEnemySpawnScript.onLastEnemykilledInZone += EnableZoneClear;
     }
 
     private void EnableZoneClear(int zoneNumber)
@@ -28,4 +29,5 @@ public class ZoneChanger : MonoBehaviour
 
         }
     }
-}
+
+    }
