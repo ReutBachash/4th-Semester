@@ -8369,5 +8369,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: City Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7306723828810049370, guid: cc2b682fa8b218c46b0674cf7ee24c53, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc2b682fa8b218c46b0674cf7ee24c53, type: 3}
