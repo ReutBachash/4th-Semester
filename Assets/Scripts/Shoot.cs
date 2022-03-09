@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Shoot : MonoBehaviour
 {
-    private float _hitRange=20000;
+    [SerializeField] private float _hitRange=20000;
 
     [SerializeField] private Camera mainCamera;
     [SerializeField] private LayerMask mouseColiderLayerMask;
@@ -56,6 +56,7 @@ public class Shoot : MonoBehaviour
                 {
                     onEnemyDeath.Invoke(hit.transform.GetComponentInParent<EnemyIdentity>());
                     hit.transform.parent.GetComponentInParent<Animator>().SetTrigger("Death");
+                    hit.transform.parent.GetComponentInParent<EnemiesMovement>().StopMovement();
                     hit.transform.parent.GetComponentInParent<DestroyObject>().DestroyMe(2f);
                 }
           

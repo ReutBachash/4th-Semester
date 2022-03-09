@@ -58,4 +58,10 @@ public class EnemiesMovement : MonoBehaviour
     {
         gameObject.GetComponent<EnemiseLookPlayer>().enabled = false;
     }
+
+    public void StopMovement()
+    {
+        gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+
+    }
 }
