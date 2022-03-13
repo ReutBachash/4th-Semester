@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 public class EnemiesZoneSpawnLogic : MonoBehaviour
 {
+    /*
     [SerializeField] Shoot _shootScript;
     [SerializeField] GameObject[] _enemies;
 
@@ -63,4 +64,5 @@ public class EnemiesZoneSpawnLogic : MonoBehaviour
            
         }
     }
+    */
 }

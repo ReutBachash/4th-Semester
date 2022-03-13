@@ -1399,6 +1399,10 @@ PrefabInstance:
       propertyPath: _shootScript
       value: 
       objectReference: {fileID: 605148158}
+    - target: {fileID: 8517166552927515770, guid: 387fddd147b1d354da6b03f9bae74023, type: 3}
+      propertyPath: isLastEnemyInZone
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 387fddd147b1d354da6b03f9bae74023, type: 3}
 --- !u!1 &283644974
@@ -8266,6 +8270,10 @@ PrefabInstance:
       propertyPath: _shootScript
       value: 
       objectReference: {fileID: 605148158}
+    - target: {fileID: 8517166552927515770, guid: 387fddd147b1d354da6b03f9bae74023, type: 3}
+      propertyPath: isLastEnemyInZone
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 387fddd147b1d354da6b03f9bae74023, type: 3}
 --- !u!1 &2012803562 stripped
@@ -9233,7 +9241,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2107826416}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd3cfe9ae1ed814382bd322a5f63469, type: 3}
+  m_Script: {fileID: 11500000, guid: b108aec74d6cacd488b47bb2bea221bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _shootScript: {fileID: 605148158}
@@ -9249,6 +9257,7 @@ MonoBehaviour:
   - {fileID: 1211845052}
   - {fileID: 903303655}
   - {fileID: 1502995812}
+  - {fileID: 1609371908}
   - {fileID: 696708658}
   - {fileID: 2029996543}
   - {fileID: 47683930}
@@ -9259,7 +9268,6 @@ MonoBehaviour:
   - {fileID: 1691205953}
   - {fileID: 1196059176}
   - {fileID: 491177888}
-  - {fileID: 2012803562}
 --- !u!1 &2114527628
 GameObject:
   m_ObjectHideFlags: 0
