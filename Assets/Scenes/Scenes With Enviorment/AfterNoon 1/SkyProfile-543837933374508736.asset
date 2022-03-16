@@ -59,10 +59,10 @@ Material:
     - _HorizonExponent: 6.32
     - _HorizonStep: 1000
     - _HorizonThickness: 1
-    - _MoonGlow: 0.24
-    - _MoonLightIntensity: 0.8
-    - _MoonSize: 0.07
-    - _MoonSoftEdge: 0.22
+    - _MoonGlow: 0.25
+    - _MoonLightIntensity: 1
+    - _MoonSize: 0.149
+    - _MoonSoftEdge: 0.206
     - _OverheadCloudAltitude: 1000
     - _OverheadCloudAnimationSpeed: 50
     - _OverheadCloudFlowDirectionX: 1
@@ -96,17 +96,17 @@ Material:
     - _GroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _HorizonCloudColor: {r: 1, g: 1, b: 1, a: 1}
     - _HorizonColor: {r: 0.081689656, g: 0.31841153, b: 0.412, a: 1}
-    - _MoonColor: {r: 0.5882353, g: 0.79607844, b: 1, a: 1}
+    - _MoonColor: {r: 0.5896226, g: 0.7967655, b: 1, a: 1}
     - _MoonDirection: {r: -0.3213938, g: -0.76604444, b: 0.5566705, a: 0}
-    - _MoonLightColor: {r: 0.532, g: 0.7682286, b: 1, a: 1}
+    - _MoonLightColor: {r: 0.47500002, g: 0.740263, b: 1, a: 1}
     - _OverheadCloudColor: {r: 1, g: 1, b: 1, a: 0.09803922}
     - _SkyColor: {r: 0.00699541, g: 0.011612245, b: 0.10224175, a: 1}
     - _StarsColor0: {r: 0.9254902, g: 0.88081425, b: 0.5432628, a: 1}
     - _StarsColor1: {r: 1, g: 0.24056602, b: 0.8628801, a: 1}
     - _StarsColor2: {r: 0, g: 0.8351569, b: 1, a: 1}
-    - _SunColor: {r: 0, g: 0, b: 0, a: 0}
-    - _SunDirection: {r: -1, g: -1, b: -1, a: 0}
-    - _SunLightColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SunColor: {r: 1, g: 1, b: 1, a: 0}
+    - _SunDirection: {r: 0, g: 0, b: 1, a: 0}
+    - _SunLightColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &11400000
 MonoBehaviour:
@@ -153,24 +153,24 @@ MonoBehaviour:
   starsTwinkleMap: {fileID: 0}
   enableSun: 0
   sunTexture: {fileID: 0}
-  sunColor: {r: 0, g: 0, b: 0, a: 0}
+  sunColor: {r: 1, g: 1, b: 1, a: 0}
   sunSize: 0
   sunSoftEdge: 0
   sunGlow: 0
   useBakedSun: 0
   sunCubemap: {fileID: 0}
-  sunLightColor: {r: 0, g: 0, b: 0, a: 0}
+  sunLightColor: {r: 1, g: 1, b: 1, a: 0}
   sunLightIntensity: 0
   enableMoon: 1
   moonTexture: {fileID: 0}
-  moonColor: {r: 0.5882353, g: 0.79607844, b: 1, a: 1}
-  moonSize: 0.07
-  moonSoftEdge: 0.22
-  moonGlow: 0.24
+  moonColor: {r: 0.5896226, g: 0.7967655, b: 1, a: 1}
+  moonSize: 0.149
+  moonSoftEdge: 0.206
+  moonGlow: 0.25
   useBakedMoon: 0
   moonCubemap: {fileID: 0}
-  moonLightColor: {r: 0.532, g: 0.7682286, b: 1, a: 1}
-  moonLightIntensity: 0.8
+  moonLightColor: {r: 0.47500002, g: 0.740263, b: 1, a: 1}
+  moonLightIntensity: 1
   customCloudTexture: {fileID: 0}
   enableHorizonCloud: 0
   horizonCloudColor: {r: 1, g: 1, b: 1, a: 1}
