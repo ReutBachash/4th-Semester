@@ -19,10 +19,10 @@ public class TriggerHandler : MonoBehaviour
        if(zone1Cleared)
         {
             this.gameObject.GetComponent<Animator>().SetTrigger("Zone1Cleared");
-        }else if(zone2Cleared)
+        }if(zone2Cleared)
         {
             this.gameObject.GetComponent<Animator>().SetTrigger("Zone2Cleared");
-        }else if(zone3Cleared)
+        }if(zone3Cleared)
         {
             this.gameObject.GetComponent<Animator>().SetTrigger("Zone3Cleared");
         }
