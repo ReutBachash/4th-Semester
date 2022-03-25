@@ -962,7 +962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &24098149
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22719,7 +22719,7 @@ MonoBehaviour:
   - name: PlayerShot
     clip: {fileID: 8300000, guid: 82a7267b4f1070d40b3f1611c4c62fe0, type: 3}
     volume: 1
-    pitch: 3
+    pitch: 1.12
     source: {fileID: 0}
 --- !u!4 &747494205
 Transform:
