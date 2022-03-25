@@ -45,6 +45,7 @@ public class Shoot : MonoBehaviour
 
     void RayShoot()
     {
+        FindObjectOfType<AudioManager>().Play("PlayerShot");
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hit, _hitRange, mouseColiderLayerMask))
         {
