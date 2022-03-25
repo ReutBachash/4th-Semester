@@ -64,7 +64,11 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+<<<<<<< Updated upstream
     - _Health: 0.6
+=======
+    - _Health: 0.2
+>>>>>>> Stashed changes
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
