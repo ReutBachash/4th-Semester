@@ -28,7 +28,7 @@ public class EnemiesSpawnLogic : MonoBehaviour
     // Update is called once per frame
     private void SpawnNextEnemy(EnemyIdentity identity)
     {
-        if(identity._enemyNumber<_allEnemies.Length)
+        if (identity._enemyNumber<_allEnemies.Length)
         {        _allEnemies[identity._enemyNumber + 1].SetActive(true);
 
             if (!identity.isLastEnemyInZone)
