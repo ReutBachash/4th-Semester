@@ -22566,14 +22566,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741847727}
-  m_LocalRotation: {x: -0.052367892, y: -0.70527595, z: 0.0746179, w: 0.70304745}
-  m_LocalPosition: {x: -0.105, y: -0.642, z: 0.236}
-  m_LocalScale: {x: 0.18205, y: 0.18205, z: 0.18205}
+  m_LocalRotation: {x: 0.0013619955, y: -0.7091811, z: 0.036787, w: 0.70406467}
+  m_LocalPosition: {x: -0.032, y: -0.18, z: 0.249}
+  m_LocalScale: {x: 0.06754743, y: 0.06754743, z: 0.06754743}
   m_Children:
   - {fileID: 495938018}
   m_Father: {fileID: 963194228}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 1.812, y: -90.018, z: 10.304}
+  m_LocalEulerAnglesHint: {x: 3.101, y: -90.337, z: 2.863}
 --- !u!95 &741847729
 Animator:
   serializedVersion: 3
@@ -22718,7 +22718,7 @@ MonoBehaviour:
   sounds:
   - name: PlayerShot
     clip: {fileID: 8300000, guid: 82a7267b4f1070d40b3f1611c4c62fe0, type: 3}
-    volume: 1
+    volume: 0.62
     pitch: 1.12
     source: {fileID: 0}
 --- !u!4 &747494205
@@ -72386,7 +72386,7 @@ Animator:
   m_GameObject: {fileID: 2105759481}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6353c7f6bd5775947bd30df184d4e862, type: 3}
-  m_Controller: {fileID: 9100000, guid: 253f7530d4154514292265027545e5a2, type: 2}
+  m_Controller: {fileID: 9100000, guid: da57c4c9a81b99f40a2e4a22afcc3df4, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
