@@ -18363,7 +18363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f6e26d8d56987b43b2658a5a6705ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healthBarMat: {fileID: 2100000, guid: c5d55f2517815664ca2d27656b41a174, type: 2}
+  _healthBarMat: {fileID: 2100000, guid: d667ff19f3172b0489425159fc1f2286, type: 2}
   health: 100
 --- !u!1 &606128633
 GameObject:
@@ -22719,6 +22719,11 @@ MonoBehaviour:
   - name: PlayerShot
     clip: {fileID: 8300000, guid: 82a7267b4f1070d40b3f1611c4c62fe0, type: 3}
     volume: 0.62
+    pitch: 1.12
+    source: {fileID: 0}
+  - name: mo
+    clip: {fileID: 8300000, guid: bf8fd8c6c08f001419a1eba10e103627, type: 3}
+    volume: 0.34
     pitch: 1.12
     source: {fileID: 0}
 --- !u!4 &747494205
