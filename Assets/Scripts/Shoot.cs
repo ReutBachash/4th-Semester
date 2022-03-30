@@ -24,6 +24,7 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         bulletsAvailable.text = ("Bullets Available: " + availableBullets);
 
         if (Input.GetMouseButtonDown(0))
@@ -42,6 +43,7 @@ public class Shoot : MonoBehaviour
             }
         }
     }
+
 
     void RayShoot()
     {
