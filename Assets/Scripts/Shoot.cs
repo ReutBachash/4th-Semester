@@ -14,12 +14,10 @@ public class Shoot : MonoBehaviour
     [SerializeField] private Text bulletsAvailable;
     public event Action<EnemyIdentity> onEnemyDeath;
 
-    private int availableBullets = 3;
-    private float currentTime;
+    private int availableBullets = 6;
 
-    [SerializeField] private float timeToReload=50f;
-    [SerializeField] private int maximumBullets = 3;
-
+    [SerializeField] private int maximumBullets = 6;
+    [SerializeField] private Animator animator;
 
     // Update is called once per frame
     void Update()
@@ -28,18 +26,18 @@ public class Shoot : MonoBehaviour
         bulletsAvailable.text = ("Bullets Available: " + availableBullets);
 
         if (Input.GetMouseButtonDown(0))
+        {
+            animator.SetTrigger("Shoting");
             RayShoot();
+        }
 
         if(availableBullets<maximumBullets)
         {
-            if(currentTime<timeToReload)
+            if (Input.GetMouseButtonDown(1))
             {
-                currentTime++;
-            }
-            else
-            {
-                currentTime = 0;
-                availableBullets++;
+                availableBullets = maximumBullets;
+                FindObjectOfType<AudioManager>().Play("Reload");
+                animator.SetTrigger("Reload");
             }
         }
     }
@@ -47,7 +45,14 @@ public class Shoot : MonoBehaviour
 
     void RayShoot()
     {
-        FindObjectOfType<AudioManager>().Play("PlayerShoot");
+        if(availableBullets == 0)
+        {
+            FindObjectOfType<AudioManager>().Play("noAmmo");
+        }
+        else
+        {
+            FindObjectOfType<AudioManager>().Play("PlayerShoot");
+        }
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hit, _hitRange, mouseColiderLayerMask))
         {
