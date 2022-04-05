@@ -21,6 +21,6 @@ public class PlayerPoints : MonoBehaviour
     void AddPoints(EnemyIdentity identity)
     {
         currentPoints += _amountOfPointsPerKill * (identity._enemyNumber + 1) * pointsMultiplayer;
-        _points.text = ("Points " + currentPoints);
+        _points.text = ("SCORE " + currentPoints);
     }
 }
