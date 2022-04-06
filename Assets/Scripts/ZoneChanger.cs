@@ -52,8 +52,8 @@ public class ZoneChanger : MonoBehaviour
             if (timeElapsed < lerpDuration)
             {
                 vCamPOV.m_HorizontalAxis.Value = Mathf.Lerp(vCamPOV.m_HorizontalAxis.Value, sidePosition, timeElapsed / lerpDuration);
-                vCamPOV.m_HorizontalAxis.m_MinValue = -75;
-                vCamPOV.m_HorizontalAxis.m_MaxValue = 75;
+                vCamPOV.m_HorizontalAxis.m_MinValue = -150;
+                vCamPOV.m_HorizontalAxis.m_MaxValue = 0;
                 timeElapsed += Time.deltaTime;
                 move = false;
 

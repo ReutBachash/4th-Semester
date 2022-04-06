@@ -6,6 +6,7 @@ public class PlayerHealth : MonoBehaviour
     public float health = 100;
 
     private bool IsGameOver = false;
+    public GameObject GameOverUI;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         { 
             IsGameOver = true;
+            GameOverUI.SetActive(true);
             return;
         }
     }
