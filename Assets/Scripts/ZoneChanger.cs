@@ -15,6 +15,7 @@ public class ZoneChanger : MonoBehaviour
     [SerializeField] private float lerpDuration = 10;
     float timeElapsed;
     [SerializeField] private float sidePosition;
+    [SerializeField] GameObject winMenu;
 
     private void Start()
     {
@@ -39,6 +40,7 @@ public class ZoneChanger : MonoBehaviour
                 break;
             case 3:
                 GameObject.Find("CM vcam1").GetComponent<TriggerHandler>().zone3Cleared = true;
+                winMenu.SetActive(true);
                 move = true;
 
                 break;
