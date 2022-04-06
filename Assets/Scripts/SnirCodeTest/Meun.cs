@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Meun : MonoBehaviour
 {
+    
     public void LoadNext()
     {
         SceneManager.LoadScene(1);

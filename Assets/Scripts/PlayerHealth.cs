@@ -18,8 +18,11 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         { 
             IsGameOver = true;
+            Cursor.lockState = CursorLockMode.None;
+
             GameOverUI.SetActive(true);
-            return;
+            Debug.Log("you lost");
+
         }
     }
 
