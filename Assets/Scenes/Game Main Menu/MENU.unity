@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13927495, g: 0.16078848, b: 0.19582239, a: 1}
+  m_IndirectSpecularColor: {r: 0.13927868, g: 0.1608378, b: 0.19591284, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -28322,7 +28322,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.5904e-41, y: 0, z: 0, w: 9.403955e-38}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 7.9993745e-10}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -46724,6 +46724,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFlickering: 0
   timeDelay: 0
+  plane: {fileID: 0}
+  spotlight: {fileID: 0}
 --- !u!108 &1074992017
 Light:
   m_ObjectHideFlags: 0
@@ -47012,7 +47014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1081404023}
-  - component: {fileID: 1081404024}
+  - component: {fileID: 1081404025}
   m_Layer: 0
   m_Name: Headlight
   m_TagString: Untagged
@@ -47036,25 +47038,22 @@ Transform:
   m_Father: {fileID: 4904709828575485694}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1081404024
-Animator:
-  serializedVersion: 3
+--- !u!114 &1081404025
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081404022}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2c0c4034f3e2d2646a45e9a66009fe91, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd055ead3e0318848a783878a2dfc35a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFlickering: 0
+  timeDelay: 0
+  plane: {fileID: 1148090002}
+  spotlight: {fileID: 1222221883}
 --- !u!1001 &1082324123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53603,7 +53602,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1222221886}
   - component: {fileID: 1222221885}
-  - component: {fileID: 1222221884}
   m_Layer: 0
   m_Name: Spot Light (2)
   m_TagString: Untagged
@@ -53611,20 +53609,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1222221884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222221883}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd055ead3e0318848a783878a2dfc35a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFlickering: 0
-  timeDelay: 0
 --- !u!108 &1222221885
 Light:
   m_ObjectHideFlags: 0
