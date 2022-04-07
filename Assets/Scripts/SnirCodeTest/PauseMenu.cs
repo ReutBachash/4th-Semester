@@ -21,6 +21,7 @@ public class PauseMenu : MonoBehaviour
         {
             if (GameIsPause)
             {
+                Cursor.lockState = CursorLockMode.Locked;
                 Resume();
             }
             else
