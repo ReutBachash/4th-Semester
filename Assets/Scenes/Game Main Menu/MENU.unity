@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13927868, g: 0.1608378, b: 0.19591284, a: 1}
+  m_IndirectSpecularColor: {r: 0.13927495, g: 0.16078848, b: 0.19582239, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -28322,7 +28322,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.5905e-41, y: 0, z: 0, w: NaN}
+  m_BoundingSphereOverride: {x: 4.5904e-41, y: 0, z: 0, w: 1.5719965e+10}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -35999,8 +35999,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: press any key to start...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0dede423952205349bc6bdfcd95bf050, type: 2}
-  m_sharedMaterial: {fileID: -987215473698267043, guid: 0dede423952205349bc6bdfcd95bf050, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a8702db16b060e4cac732a009bb91f7, type: 2}
+  m_sharedMaterial: {fileID: 1121101323570675798, guid: 8a8702db16b060e4cac732a009bb91f7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -96677,6 +96677,7 @@ MonoBehaviour:
   _enemyNumber: 0
   isLastEnemyInZone: 0
   isAlive: 0
+  direction: 0
   _player: {fileID: 0}
 --- !u!4 &3618070962005934826
 Transform:
