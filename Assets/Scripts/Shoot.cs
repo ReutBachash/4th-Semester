@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using TMPro;
 
 public class Shoot : MonoBehaviour
 {
@@ -11,13 +12,17 @@ public class Shoot : MonoBehaviour
     [SerializeField] private Camera mainCamera;
     [SerializeField] private LayerMask mouseColiderLayerMask;
 
-    [SerializeField] private Text bulletsAvailable;
+    [SerializeField] private TextMeshProUGUI bulletsAvailable;
     public event Action<EnemyIdentity> onEnemyDeath;
 
     private int availableBullets = 6;
 
     [SerializeField] private int maximumBullets = 6;
     [SerializeField] private Animator animator;
+
+    [SerializeField] private ParticleSystem muzzleFlash; 
+    [SerializeField] private ParticleSystem hitEffect; 
+    [SerializeField] private ParticleSystem hitEffectBlood; 
 
     // Update is called once per frame
     void Update()
@@ -60,12 +65,17 @@ public class Shoot : MonoBehaviour
             if(availableBullets>0)
             {
                 availableBullets--;
-                if(hit.transform.CompareTag("Enemy") && (hit.transform.GetComponentInParent<EnemyIdentity>().isAlive))
+                muzzleFlash.Play();
+                hitEffect.transform.position = hit.point;
+                hitEffect.Play();
+                if (hit.transform.CompareTag("Enemy") && (hit.transform.GetComponentInParent<EnemyIdentity>().isAlive))
                 {
                     onEnemyDeath.Invoke(hit.transform.GetComponentInParent<EnemyIdentity>());
                     hit.transform.parent.GetComponentInParent<Animator>().SetTrigger("Death");
                     hit.transform.parent.GetComponentInParent<EnemiesMovement>().StopMovement();
-                    hit.transform.parent.GetComponentInParent<DestroyObject>().DestroyMe(2f);
+                    hitEffectBlood.transform.position = hit.point;
+
+                    hitEffectBlood.Play();
                 }
           
             }
