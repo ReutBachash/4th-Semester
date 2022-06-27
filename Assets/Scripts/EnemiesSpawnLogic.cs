@@ -12,6 +12,9 @@ public class EnemiesSpawnLogic : MonoBehaviour
 
     public event Action<int> onLastEnemykilledInZone;
 
+    [SerializeField] GameObject indicatorLeft;
+    [SerializeField] GameObject indicatorMiddle;
+    [SerializeField] GameObject indicatorRight;
 
     void Start()
     {
@@ -21,10 +24,32 @@ public class EnemiesSpawnLogic : MonoBehaviour
 
         _allEnemies[0].GetComponent<EnemiesMovement>().SetDestination(); //spawning first enemy
         _allEnemies[0].GetComponent<EnemyIdentity>().isAlive = true; //spawning first enemy
-
+        changeByDirection(_allEnemies[0].GetComponent<EnemyIdentity>().direction);
 
     }
-
+    private void changeByDirection(int direction)
+    {
+        switch (direction)
+        {
+            case 2:
+                indicatorLeft.SetActive(true);
+                indicatorMiddle.SetActive(false);
+                indicatorRight.SetActive(false);
+                break;
+            case 1:
+                indicatorLeft.SetActive(false);
+                indicatorMiddle.SetActive(true);
+                indicatorRight.SetActive(false);
+                break;
+            case 0:
+                indicatorLeft.SetActive(false);
+                indicatorMiddle.SetActive(false);
+                indicatorRight.SetActive(true);
+                break;
+            default:
+                break;
+        }
+    }
     // Update is called once per frame
     private void SpawnNextEnemy(EnemyIdentity identity)
     {
@@ -37,6 +62,7 @@ public class EnemiesSpawnLogic : MonoBehaviour
               
                 _allEnemies[identity._enemyNumber + 1].GetComponent<Animator>().enabled = true;
                 _allEnemies[identity._enemyNumber + 1].GetComponent<EnemyIdentity>().isAlive = true;
+                changeByDirection(_allEnemies[identity._enemyNumber + 1].GetComponent<EnemyIdentity>().direction);
             }
             else
             {
@@ -54,6 +80,8 @@ public class EnemiesSpawnLogic : MonoBehaviour
         _allEnemies[identity._enemyNumber + 1].GetComponent<EnemiesMovement>().SetDestination();
         _allEnemies[identity._enemyNumber + 1].GetComponent<EnemyIdentity>().isAlive = true;
         _allEnemies[identity._enemyNumber + 1].GetComponent<Animator>().enabled = true;
+        changeByDirection(_allEnemies[identity._enemyNumber + 1].GetComponent<EnemyIdentity>().direction);
+
 
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyIdentity : MonoBehaviour
 {
@@ -11,11 +12,15 @@ public class EnemyIdentity : MonoBehaviour
     public bool isAlive=false;
     private float amountOfSecBeforeShoot = 3;
     private float currentTime;
+    public int direction;
 
+   
     private Shoot shootScript;
    private PlayerHealth playerHealth;
 
     [SerializeField] GameObject _player;
+
+
     private void Start()
     {
         shootScript = _player.GetComponent<Shoot>();
@@ -42,6 +47,7 @@ public class EnemyIdentity : MonoBehaviour
                 playerHealth.DecreaseHealth();
                 currentTime = 0;
             }
+           
         }
     }
 }

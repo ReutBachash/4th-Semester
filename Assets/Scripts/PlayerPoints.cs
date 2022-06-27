@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerPoints : MonoBehaviour
 {
-    [SerializeField] private Text _points;
+    [SerializeField] private TextMeshProUGUI _points;
     [SerializeField] private float _amountOfPointsPerKill = 100;
 
     private float pointsMultiplayer = 1.5f;
